@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE beans PUBLIC '-//SPRING//DTD BEAN//EN' 'http://www.springframework.org/dtd/spring-beans.dtd'>
+<beans>
+    <bean class="com.pernexas.EventListener.archivelink.ConnexasArchivelinkEventListener" />
+
+    <bean class="com.pernexas.EventListener.configuration.ConnexasConfigErrorDetectedEventListener" />
+    <bean class="com.pernexas.EventListener.configuration.ConnexasConfigMissingPropertyFoundEventListener" />
+    <bean class="com.pernexas.EventListener.configuration.ConnexasConfigurationLoadedEventListener" />
+    <bean class="com.pernexas.EventListener.configuration.ConnexasConfigurationLoadingEventListener" />
+
+    <bean class="com.pernexas.EventListener.document.ConnexasALDocumentDeletedEventListener" />
+    <bean class="com.pernexas.EventListener.document.ConnexasALDocumentStoredEventListener" />
+    <bean class="com.pernexas.EventListener.document.ConnexasALDocumentUpdatedEventListener" />
+
+    <bean class="com.pernexas.EventListener.repository.ConnexasCertificateActivatedEventListener" />
+    <bean class="com.pernexas.EventListener.repository.ConnexasCertificateDeactivatedEventListener" />
+    <bean class="com.pernexas.EventListener.repository.ConnexasCertificateStoredEventListener" />
+    <bean class="com.pernexas.EventListener.repository.ConnexasRepositoryCreatedEventListener" />
+    <bean class="com.pernexas.EventListener.repository.ConnexasRepositoryDeletedEventListener" />
+    <bean class="com.pernexas.EventListener.repository.ConnexasRepositoryUpdatedEventListener" />
+
+    <bean class="com.pernexas.EventListener.sap.ConnexasBarcodeSentEventListener" />
+    <bean class="com.pernexas.EventListener.sap.ConnexasCreateALDocumentSentEventListener" />
+    <bean class="com.pernexas.EventListener.sap.ConnexasPlusFinishedEventListener" />
+    <bean class="com.pernexas.EventListener.sap.ConnexasSapReplicateFinishedEventListener" />
+    <bean class="com.pernexas.EventListener.sap.ConnexasWorkflowSentEventListener" />
+
+    <bean class="com.pernexas.EventListener.system.ConnexasAttributeServiceChangedEventListener" />
+    <bean class="com.pernexas.EventListener.system.ConnexasBootstrappingFinishedEventListener" />
+    <bean class="com.pernexas.EventListener.system.ConnexasLicenseInvalidEventListener" />
+</beans>
